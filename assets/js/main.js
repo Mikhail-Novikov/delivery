@@ -16,13 +16,13 @@ $(function() {
 	// откроем окно Не готов подтвердить
 	$('.js-open-notready-window').click(function() {
 		$('.js-modal-notready').arcticmodal({
-			afterClose: resetForm			
+			//afterClose: resetForm			
 		});	
 	});
 	// откроем окно с информацией о грузе
 	$('.js-open-infocargo-window').click(function() {
 		$('.js-modal-infocargo').arcticmodal({
-			afterClose: resetForm
+			//afterClose: resetForm
 		});	
 	});
 	// откроем окно с порядком работы
@@ -149,7 +149,7 @@ $(function() {
 
 
 	//---------   VALIDATOR   -------------
-	  validForm();
+/*	  validForm();
 	  var resetForm;
 	  function validForm() {
 	      var formValidateSet = {
@@ -251,6 +251,6 @@ $(function() {
 			$('.js-modal-notready').find(":checkbox").on('click', function(){
 				$(".js-btn-notready").trigger('click');
 			})
-	  }
+	  }*/
 
 });

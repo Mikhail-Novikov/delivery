@@ -389,7 +389,7 @@ $arParams['TITLE'] = 'Рассчитать перевозку';
 </div>
 
 <!-- форма информация о грузе -->
-<div class="hidden">
+<div id="modal" class="hidden">
 	<div class="box-modal js-modal-infocargo">
 		<div class="box-modal_close arcticmodal-close"><img src="assets/img/close.png"></div>
 			<h2 class="text-center">Информация о грузе</h2>
@@ -498,52 +498,51 @@ $arParams['TITLE'] = 'Рассчитать перевозку';
 	<div class="box-modal js-modal-notready">
 		<div class="box-modal_close arcticmodal-close"><img src="assets/img/close.png"></div>
 
-			<form class="form-notready js-form-validate">
+			<form   class="form-notready js-form-validate">
 				<h2 class="text-center">Не готов подтвердить</h2>
 				<p class="title text-center mb-25">Выберите причину, по которой вы не готовы подтвердить заявку:</p>
 
 				<div class="form-notready-wrap">
 					<label class="calculate-tag-label">
-						<input class="calculate-checkbox" type="checkbox" name="notready[]" value='notready1' required>
+						<input class="calculate-checkbox" type="checkbox" value='notready1' required v-model="notready">
 						<span class="calculate-checkbox-custom"></span>
 						<span class="calculate-label">груз не готов </span>
 					</label>
 					<label class="calculate-tag-label">
-						<input class="calculate-checkbox" type="checkbox" name="notready[]" value='notready2' required>
+						<input class="calculate-checkbox" type="checkbox" value='notready2' required v-model="notready">
 						<span class="calculate-checkbox-custom"></span>
 						<span class="calculate-label">дорого</span>
 					</label>
 					<label class="calculate-tag-label">
-						<input class="calculate-checkbox" type="checkbox" name="notready[]" value='notready3' required>
+						<input class="calculate-checkbox" type="checkbox" value='notready3' required v-model="notready">
 						<span class="calculate-checkbox-custom"></span>
 						<span class="calculate-label">убрать услугу</span>
 					</label>
 					<label class="calculate-tag-label">
-						<input class="calculate-checkbox" type="checkbox" name="notready[]" value='notready4' required>
+						<input class="calculate-checkbox" type="checkbox" value='notready4' required v-model="notready">
 						<span class="calculate-checkbox-custom"></span>
 						<span class="calculate-label">добавить услугу</span>
 					</label>
 					<label class="calculate-tag-label">
-						<input class="calculate-checkbox" type="checkbox" name="notready[]" value='notready5' required>
+						<input class="calculate-checkbox" type="checkbox" value='notready5' required v-model="notready">
 						<span class="calculate-checkbox-custom"></span>
 						<span class="calculate-label">сроки не устраивают</span>
 					</label>
 
 					<p class="reason">Пожалуйста, укажите хотя бы одну причину<p>
 
-					<p class="title mt-25 mb-25">Если вам необходима помощь в работе с системой или консультация 
-свяжитесь с вашим менеджером:</p>
+					<p class="title mt-25 mb-25">Если вам необходима помощь в работе с системой или консультация свяжитесь с вашим менеджером:</p>
 
 					<div class="form-valid">
-						<input type="text" class="modal-input mid" placeholder="Имя" name="notready_nic">
+						<input type="text" class="modal-input mid" placeholder="Имя" name="notready_nic"  v-model="notready_nic" @input="$v.notready_nic.$touch()">
 						<span>Поле не заполнено</span>
 					</div>
 					<div class="form-valid">					
-						<input type="text" class="modal-input mid" placeholder="Телефон" data-mask="+7 (999) 999-99-99"  aria-type='phone' name="notready_phone">
+						<input type="text" class="modal-input mid" placeholder="Телефон" data-mask="+7 (999) 999-99-99"  aria-type='phone' name="notready_phone" v-model="notready_phone">
 						<span>Поле не заполнено</span>
 					</div>	
 					<div class="form-valid">
-						<input type="text" class="modal-input mid" placeholder="email" name="notready_email" >
+						<input type="text" class="modal-input mid" placeholder="email" name="notready_email"  v-model="notready_email">
 						<span>Поле не заполнено</span>
 					</div>	
 				</div>

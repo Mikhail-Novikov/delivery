@@ -49,7 +49,7 @@
 	<script src="assets/js/vue.js"></script>		
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.maskedinput.min.js"></script>
-	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/vuelidate.min.js"></script>
 	<script src="assets/js/jquery.datetimepicker.full.min.js"></script>	
 	<script src="assets/js/datatables.min.js"></script>	
 	<script src="assets/js/jquery.arcticmodal-0.3.min.js"></script>	
