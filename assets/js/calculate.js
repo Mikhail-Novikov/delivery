@@ -34,8 +34,11 @@ var app = new Vue({
   data: {
     type_delivery: 'assemb',
     base_weight: '',
-    base_places:'',
-    base_length:''
+    base_places: '',
+    base_length: '',
+    base_width: '',
+    base_volume: '',
+    base_height: '',    
   }
 });
 

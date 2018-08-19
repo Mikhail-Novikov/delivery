@@ -44,19 +44,19 @@ $arParams['TITLE'] = 'Рассчитать перевозку';
 						<div class="calculator-line without-cross">
 							<i class="calculator-weight"></i>
 							<div class="calculator-input-container">							
-								<input type="text" class="calculator-input" placeholder="Вес" name='base_weight' v-model="base_weight">
-								<input type="text" class="calculator-input" placeholder="Мест" name='base_places' v-model='base_places'>
-								<input type="text" class="calculator-input" placeholder="Объем" name='base_volume'>
+								<input type="number" class="calculator-input" placeholder="Вес" name='base_weight' v-model.number="base_weight">
+								<input type="number" class="calculator-input" placeholder="Мест" name='base_places' v-model.number='base_places'>
+								<input type="number" class="calculator-input" placeholder="Объем" name='base_volume' v-model.number='base_volume'>
 							</div>
 						</div>
 						<div class="calculator-line">
 							<i class="calculator-ruller"></i>
 							<div class="calculator-input-container">							
-								<input type="text" class="calculator-input" placeholder="Длина" name='base_length' v-model="base_length">
+								<input type="number" class="calculator-input" placeholder="Длина" name='base_length' v-model.number="base_length">
 								<i class="calculator-cross"></i>
-								<input type="text" class="calculator-input" placeholder="Ширина" name='base_width'>
+								<input type="number" class="calculator-input" placeholder="Ширина" name='base_width' v-model.number="base_width">
 								<i class="calculator-cross"></i>
-								<input type="text" class="calculator-input" placeholder="Высота" name='base_height'>
+								<input type="number" class="calculator-input" placeholder="Высота" name='base_height' v-model.number="base_height">
 							</div>
 						</div>
 
