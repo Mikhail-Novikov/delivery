@@ -1,0 +1,129 @@
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+  margin-bottom: 4px;
+}
+/* Underline and Placeholder */
+
+input.question ~ label,
+textarea.question ~ label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-top: 2px solid #cac7c7;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus ~ label,
+textarea.question:focus ~ label {
+  width: 100%;
+}
+
+input.question:focus,
+input.question:valid {
+/*   padding-top: 21px; */
+
+}
+
+input.question.valid {
+  background-image: url('../img/input-success-icon.png');
+  background-repeat: no-repeat;
+  background-position: right bottom 3px;
+}
+input.question.error {
+  background-image: url('../img/input-error-icon.png');
+  background-repeat: no-repeat;
+  background-position: right bottom 3px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus ~ label > span,
+input.question:valid ~ label > span {
+  top: -51px;
+  font-size: 12px;
+  color: #999999;
+}
+
+textarea.question:focus ~ label > span,
+textarea.question:valid ~ label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #333;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: #000000;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #999999;
+  font-size: 16px;
+  top: -31px;
+  left: 0px;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  cursor: text;
+  user-select: none;
+}
+
+input[type="submit"]:hover {
+  background: #EEE;
+}
+
+input[type="submit"]:active {
+  background: #999;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}

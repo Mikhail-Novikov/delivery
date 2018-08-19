@@ -1,0 +1,315 @@
+@media (min-width: 1400px) {
+    .container {
+        width: 1380px;
+    }
+
+}
+@media(max-width: 1400px)
+{
+	.calculator-input, .calculator-line .calculator-input.rb
+	{
+		display: block;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.calculator-input-container
+	{
+		width: calc(100% - 60px);
+		margin-left: 20px;
+	}
+	.calculator-ruller
+	{
+		vertical-align: top;
+		margin-top: 10px;
+	}
+	.calculator-weight
+	{
+		vertical-align: top;
+		margin-top: 10px;
+	}
+	.calculator-cross
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+		background-position: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.without-cross .calculator-input
+	{
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+	.without-cross .calculator-input:first-child
+	{
+		margin-left: 0px;
+	}
+	.calculator-select, .calculator-line .chosen-container
+	{
+		width: calc(100% - 40px);
+		margin: 0 0 10px 10px;
+	}
+	.without-cross.rb{
+    	margin-left: 40px;
+	}
+	.calculator-select.wide
+	{
+		width: 100%;
+	}
+	.calculator-select + i
+	{
+		margin-left: 0px;
+	}
+	.calculator-select-bordered
+	{
+		width: 100%;
+	}
+	.calculator-select-machroute
+	{
+		width: 100%;
+	}
+	.box-modal .calculator-select-machroute{
+	    width: 280px;
+	}
+	.mid-modal-block .mmb-r{
+		float: none;
+	}
+}
+@media(max-width: 1200px)
+{
+	.dotted-list-title
+	{
+		display: block;
+	}
+	.registration-wide-image
+	{
+		padding-left: 20px;
+		padding-top: 50px;
+	}
+	.header-slogan
+	{
+		font-size: 13px;
+	}
+	.table-responsive {
+	    overflow-x: auto;
+	}
+	.modal-info{
+		text-align: center;
+	}
+	.modal-info .text-warning{
+		display: block;
+		margin-bottom: 25px;
+	}
+}
+@media(max-width: 991px)
+{
+	.calculate-tag-label{
+		margin-left: 50px;
+		margin-right: 0;
+	}
+	.footer-menu-column.wide
+	{
+		padding-left: 30px;
+	}
+	.registration-wide-image
+	{
+		padding-left: 20px;
+		padding-top:  20px;
+		background-size: 100%;
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	.registration-floating-block 
+	{
+		font-size: 20px;
+		width: 290px;
+		padding: 25px;
+	}
+	.table-footer-button
+	{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.stripped-table
+	{
+		margin-bottom: 10px;
+	}
+	.header-slogan
+	{
+		display: none;
+	}
+	.calculator-floating-block
+	{
+		right: 65px;
+		z-index: 10;
+	}
+	.calculator-white-blue-container
+	{
+		width: calc(100% - 50px);
+		display: inline-block;
+	}
+	.calcualtor-floating-button
+	{
+		z-index: 100;
+		border-radius: 0px 10px 10px 0px;
+		box-shadow: none;
+	}
+}
+@media(max-width: 768px)
+{
+	h2
+	{
+		text-align: center;
+	}
+	.nav > li
+	{
+		display: block;
+		width: 100%;
+		padding-left: 0px;
+	}
+	.auth-block
+	{
+		text-align: center;
+	}
+	.logo-block
+	{
+		text-align: center;
+	}
+	.blue-gradient-container + .row
+	{
+		text-align: center;
+	}
+	.footer-menu-items
+	{
+		margin-top: 10px;
+	}
+	.footer-menu-column-heading
+	{
+		margin-top: 20px;
+	}
+	.footer-menu-column.wide
+	{
+		padding-left: 50px;
+	}
+	.footer-menu-column
+	{
+		padding-left: 50px;
+	}
+	.dotted-list
+	{
+		padding-right: 0px;
+	}
+	.registration-form
+	{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.registration-form .animated-input
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.registration-form-footer
+	{
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.calculator-select-bordered
+	{
+		margin-bottom: 10px;
+	}
+	.calculator-select-machroute
+	{
+		margin-bottom: 10px;
+	}
+	.calculator-white-blue-container
+	{
+		height: auto;
+	}
+	.box-modal .calculator-ruller{
+		display: block;
+		margin: 15px auto;
+	}
+	.box-modal .title, .box-modal p {
+    	text-align: center;
+    	margin-bottom: 20px;
+	}
+	.box-modal .calculate-tag-label {
+	    display: block;
+	    text-align: left;
+	}
+}
+@media(max-width: 500px)
+{
+	.box-modal{
+		padding: 15px;
+	}
+	.box-modal .wrap-border{
+		padding-right: 15px;
+	}
+	.box-modal .modal-input {
+    	width: 100% !important;
+	}	
+	.calculator-table-footer .print-icon
+	{
+		left: 0px;
+	}
+	.pink-header-line
+	{
+		padding-left: 15px;
+	}
+	.flat-table
+	{
+		width: 100%;
+	}
+	.nav > li
+	{
+	    float: none;
+	    display: block;
+	    padding-left: 0px;
+	}
+	.btn{
+		font-size: 15px;
+		width: 100%;
+		text-align: center;
+	}
+	.dotted-list
+	{
+		padding-right: 0px;
+		margin-bottom: 30px;
+	}
+	.dotted-list-value
+	{
+		display: block;
+	}
+	.dotted-list li
+	{
+		width: 100%;
+	}
+	.blue-gradient-container
+	{
+		padding: 10px;
+		margin: 5px 5px 15px 5px;
+	}
+	.filter-block .filter-input + .filter-input{
+		margin-left: 0;
+		margin-top: 25px;
+	}
+	.filter-block .filter-input{
+		margin-left: 0;
+		width: 100%;
+	}	
+	.request-page-footer-sum{
+		text-align: center;
+	}
+}
+
+@media(min-width: 768px)
+	{
+	.text-sm-left{
+		text-align: left;
+	}
+}
