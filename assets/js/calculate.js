@@ -20,14 +20,20 @@ var c = new Vue({
   }
 });
 
-goods.querySelectorAll('input').forEach(function (item) {
+goods.querySelectorAll('input[type="number"]:not(#base_volume)').forEach(function (item) {
 	c.$watch(item.name, function (newVal, oldVal) {
 	 //console.log(app.base_weight, app.base_length, app.base_places);
 		if (c.base_weight > 14000 || c.base_length > 20 || c.base_length * c.base_places > 20) {
 	  	c.type_delivery = 'general';
 		}else{
 	  	c.type_delivery = 'assemb';			
-		}	
+		}
+		var calcVolume = c.base_width * c.base_length * c.base_height;
+		if ( calcVolume == 0) {
+	  	c.base_volume	= '';	
+		}else{
+	  	c.base_volume = calcVolume;		
+		}
 	})
 });
 
@@ -39,11 +45,11 @@ var m = new Vue({
     notready_phone: '',
     notready_email: ''
   },
-  validations:{
+/*  validations:{
   	notready_nic:{
   		required: required 
   	}
-  }
+  }*/
 });
 
 

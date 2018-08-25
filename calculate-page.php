@@ -46,7 +46,7 @@ $arParams['TITLE'] = 'Рассчитать перевозку';
 							<div class="calculator-input-container">							
 								<input type="number" class="calculator-input" placeholder="Вес" name='base_weight' v-model.number="base_weight">
 								<input type="number" class="calculator-input" placeholder="Мест" name='base_places' v-model.number='base_places'>
-								<input type="number" class="calculator-input" placeholder="Объем" name='base_volume' v-model.number='base_volume'>
+								<input id="base_volume" type="number" class="calculator-input" placeholder="Объем" name='base_volume' v-model.number='base_volume'>
 							</div>
 						</div>
 						<div class="calculator-line">
